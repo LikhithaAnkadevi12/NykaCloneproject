@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa Shoping </title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        header{
+            position: relative;
+            width: 100%;
+            top: 0;
+        }
+        .cls1 img {
+            width: 100%;
+        }
+        .cls{
+            position: absolute;
+            top: 0px;
+            left: 10%;
+            display: flex;
+            float: left;
+            bottom: 10%;
+            color: white;
+        }
+        nav{
+            position: absolute;
+            top: 15px;
+            right: 7%;
+            /* display: flex; */
+            /* justify-content: space-around; */
+        }
+        .subcls{
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+             /* position: fixed;  */
+        }
+        .subcls a{
+            text-decoration: none;
+            color: black;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            color: white;
+        }
+        .logo{
+            padding-top: 18px;
+            padding-left: 70%; 
+            width: 100%; 
+        }
+        #category{
+            display: flex;
+            
+        }
+        .secdline {
+            display: flex;
+            align-items: center;
+            padding-top: 0px;
+            float: right;
+           /* font-size: 1.1rem; */
+           padding-left: 80px;
+           /* position: fixed; */
+           /* flex-grow: 1; */
+        }
+        .secdline a {
+           padding-left: 40px;
+            margin:  25px;
+            text-decoration: none;
+            color: black;
+            /* top: 0; */
+            font-size: 1.1rem;
+            font-family: sans-serif;
+        }
+        .secdline input {
+            margin-left: 5%;
+            padding: 5px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .secdline button {
+            margin-left: 10%;
+            /* padding: 5px 10px; */
+            padding: 5px 10px;
+            background-color: #f6238d;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cartimg{
+            width: 10%;
+            margin-left: 20px;
+        }
+        .searchdiv{
+               /* margin-left: 5%; */
+               display: flex;
+               
+        }       
+        .offer{
+            display: flex;
+            /* position: absolute; */
+            /* justify-content: space-around; */
+            align-items: center;
+            padding-top: 0px;
+            padding-left: 7px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .offer a{
+            text-decoration: none;
+            margin: 20px;
+            font-size: 1.1rem;
+            padding-left: 25px;
+            
+            /* padding-left: 20px; */
+            /* margin-left: 20px; */
+        }
+        /* button{
+            border-radius: 15px;
+        } */
+        .offerbutton{
+            height: 30px;
+            /* margin-left: 10%; */
+            /* padding: 5px 10px; */
+            padding: 5px 10px;
+            background-color: #f6238d;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .scroll img {
+            height: 20px;
+        }
+        .scroll2 img{
+            padding-top: 30px;
+            width: 1700px;
+        }
+        .threeimgs{
+            /* width: 1000px; */
+            display: flex;
+            justify-content: space-around;
+            /* gap: 5px; */ 
+            padding-left: 20px;
+            padding-right: 30px;
+            /* padding-top: 0; */
+        }
+        .threeimgs img {
+            border-radius: 20px; /* Makes the images more curved */
+            width: 500px; /* You can adjust the width */
+            height:550px; /* You can adjust the height */
+            box-shadow: 0px 4px 8px rgba(116, 109, 109, 0.2); 
+        }
+        .offerpic{
+            padding-top: 20px;
+            padding-left: 25px;
+            
+        }
+        .bigimg{
+            padding-top: 10px;
+            border-radius: 5px;
+        }
+        .bigimg img{
+           height: 400px;
+           width: 1600px;
+           /* padding-left: 20px; */
+           border-radius: 20px;
+           margin-left: 40px;
+        } 
+        .images{
+            display: flex;
+            padding-left: 30px;
+            gap: 30px;
+        }
+        .fiveimgs img{
+            height: 250px;
+            width: 250px;
+            border-radius: 25px;
+            padding-right: 15px;
+        }
+        .extra img{
+            height: 100px;
+            width: 100%;
+        }  
+        .explore{
+            background-color:#c6c4c3;
+            /* padding-left: 20%; */
+            border-radius: 10px;
+        }
+        .explore2{
+            padding-left: 10%;
+        }  
+        .explore3 {
+            display: flex;
+            gap: 5%;
+            padding-left: 10%;
+            padding-right: 30%;
+        }
+        .explore3 img{
+            height: 300px;
+            width: 450px;
+            /* gap: 5px; */
+        }
+        .bubbimg img{
+            height: 300px;
+            width: 1700px;
+        }
+        .soaps{
+            display: flex;
+            gap: 15px;
+            padding-left: 5%;
+        }
+        .soaps img{
+            height: 230px;
+            width: 230px;
+            border-radius: 20px;
+        }
+        .creams{
+            padding-left: 40%;
+        }
+        .creams img{
+            height: 400px;
+            width: 350px;
+            border-radius: 10px;
+        }
+        .mail{
+            display: flex;
+        }
+        .footer1{
+            display: flex;
+            gap: 10%;
+            padding-left: 20%;
+            background-color:rgb(131, 128, 128) ;
+        }
+        .phone  {
+            display: flex;
+        }
+        .phn{
+            display: flex;
+        }
+        .five{
+            background-color: rgb(217, 204, 204);
+            display: flex;
+            gap: 10%;
+            padding-left: 15%;
+        }
+        .shipping{
+            display: flex;
+            gap: 8%;
+            padding-left: 10%;
+        }
+        .cndti{
+            display: flex;
+            font-size: 1.3rem;
+            padding-left: 25%;
+            color: white;
+        }
+        .last{
+            background-color: #c6c4c3;
+        }
+        .last p {
+            font-size: 1.5rem;
+            padding-left: 25%;
+            padding-top: 5%;
+            padding-bottom: 10%;
+        }
+        
+        
+        
+        
+        
+        
+        
+    </style>
+    
+
+</head>
+<body>
+    <div>
+        <header>
+            <div class="cls1">
+                <img src="./common-strip.jpg"/>
+            </div>
+            <div class="clss">
+                <div class="cls">
+                    <h3>BEAUTY BONANZA Get Your Amazing Deals!</h3>
+                </div>
+                <nav class="cls2">
+                    <div class="subcls">
+                        <div class="appcls">
+                            <a href="#" ><b>Get App</b></a>
+                        </div>
+                        <div>
+                            <a href="#"><b>Giftcard</b> </a>
+                        </div>
+                        <div class="storecls">
+                            <a href="#"><b>Store&Events</b></a>
+                        </div>
+                        <div class="Helpcls">
+                            <a href="#"><b>Help</b></a>
+                        </div>
+                    </div>
+                </nav>
+                <div >
+                    <div id="category">
+                        <div >
+                            <img class="logo" height="35px" src="./nykaa logo.png"/>
+                        </div>
+                        <div class="secdline">
+                            <a href="#"><b>Categories</b></a>
+                            <a href="#"><b>Brands</b></a>
+                            <a href="#"><b>Luke</b></a>
+                            <a href="#"><b>Nykaa&nbsp;Fashion</b></a>
+                            <a href="#"><b>Beauty&nbsp;Advice</b></a>
+                            <div class="searchdiv">
+                            <input type="text" placeholder="Search On Nykaa..">
+                            <button style="background-color: rgb(232, 136, 168);"><b>Signin</b></button>
+                            <img class="cartimg" height="35px" src="./cartlogo.jpg"/>
+                        </div>
+                    </div>
+                </div>
+        </header>        
+                <hr style="color: rgb(216, 209, 209)"/>
+                <div class="offer">
+                    <a href="">Make up</a>
+                    <a href="">Skin</a>
+                    <a href="">Hair</a>
+                    <a href="">Appliances</a>
+                    <a href="">Bath&Body</a>
+                    <a href="">Natural</a>
+                    <a href="">Mom&Baby</a>
+                    <a href="">Health&Wellness</a>
+                    <a href="">Men</a>
+                    <a href="">Fragnance</a>
+                    <a href="">Lingerie&Accessories</a>
+                    <button  class="offerbutton" style="background-color: rgb(246, 109, 184); "><b>Offers</b></button>
+                </div>
+                <div class="scroll">
+                    <div>
+                        <img width="1700px" src="./scroll.gif"/>
+                    </div>
+                </div>  <br/><br/>
+                <div class="threeimgs">
+                    <img  src="./nyka1pic.gif"/>
+                    <img  src="./nyka2.avif"/>
+                    <img src="./nyka 1.webp"/>
+                </div> 
+                <div class="scroll2">
+                    <img height="130px" src="./scrool2.gif"/>
+                </div>
+                <div ><br/>
+                    <div class="bigimg">
+                        <h1 style="padding-left: 35px;">Brand In Focus </h1>
+                        <img  src="./bigpic.avif"/>
+                    </div>
+                </div><br/><br/>
+                <div class="fiveimgs">
+                    <div class="images">
+                        <img  src="./img1.avif"/>
+                        <img src="./img2.avif"/>
+                        <img src="./img3.avif"/>
+                        <img src="./img4.avif"/>
+                        <img src="./img5.avif"/>
+                    </div>
+                </div><br/><br/>
+                <div class="extra">
+                    <img  src="./extra.avif"/>
+                </div>
+                <div class="explore">
+                    <div class="explore2">
+                        <h3>Explore Our Top Brands</h3>
+                        <p>A-listnes to obsess over</p>
+                        <hr/>
+                    </div>
+                    <div class="explore3">
+                        <div >
+                            <img src="./expimg1.avif" />
+                        </div>
+                        <div>
+                            <img src="./expimg2.avif" />
+                        </div>
+                        <div>
+                            <img src="./expimg3.avif"/>
+                        </div>
+                    </div>
+                    </div><br/>
+                <div class="bubbimg">
+                    <img src="./bubbimg.gif"/>
+                </div>
+                <div class="soaps">
+                    <img src="./lux.avif"/>
+                    <img src="./fiama.avif"/>
+                    <img src="./pears.avif"/>
+                    <img src="./venus.avif"/>
+                    <img src="./wander.avif"/>
+                    <img src="./dove.avif"/>
+                </div><br/><br/>
+                <div class="creams">
+                    <img src="./creams.avif"/>
+                    <h2><b>Free mini lip</b> </h2>
+                    <h3> On Rs.2500</h3> 
+                </div><br/><br/>
+                <div class="bigg">
+                    <h3>It's Time For A Glow Up!</h3>
+                    <img src="./bigg.avif"/>
+                </div>
+                   
+                <footer>
+                    <h1>Nykaa - The Online Beauty Store </h1>
+                    <div>
+                        <div class="footer1">
+                           <div class="mail">
+                            <h3>Get special discount
+                                <br/> on your inbox</h3>
+                           </div>
+                           
+                           <div class="phone">
+                            <h3>EXPERIENCE THE NYKAA 
+                                <br/>MOBILE APP</h3>
+                            </div>
+                           <div class="phn">
+                            <h3>FOR ANY HELP , 
+                                <BR/>YOU MAY CALL US AT 
+                            <br/>1800-267-4444</h3>
+                           </div>
+                        </div>
+                        <div class="five">
+                            <div >
+                                <h1>NYKAA</h1>
+                                <p>Who are we?</p>
+                                <p>Careers</p>
+                                <p>Authenticity</p>
+                                <p>Press</p>
+                                <p>tesimonials</p>
+                                <p>Nykaa CSR</p>
+                                <p>Responsible<br/>Disclosure</p>
+                                <p>Investor Relations</p>
+                                <p>Link to Smart <br/>ODR</p>
+                            </div>
+                            <div>
+                                <h2>Help</h2>
+                                <p>Contact us</p>
+                                <p>Frequently asked <br/>questions</p>
+                                <p>Store Locator</p>
+                                <p>Cancellation & <br/>Return</p>
+                                <p>Shipping & <br/>Delivery</p>
+                                <p>Sell on NYkaa</p>
+                            </div>
+                            <div>
+                                <h2>Inspire Me</h2>
+                                <p>Beauty Book</p>
+                                <p>Nykaa Network</p>
+                                <p>Buying Guides</p>
+                            </div>
+                            <div>
+                                <h2>Quick Links</h2>
+                                <p>Offer Zone</p>
+                                <p>New Launches</p>
+                                <p>Nykaa Man</p>
+                                <p>Nykaa Fashion</p>
+                                <p>Nykaa Pro</p>
+                                <p>Sitemap</p>
+                            </div>
+                            <div>
+                                <h2>Top Categories</h2>
+                                <p>Makeup</p>
+                                <p>Skin</p>
+                                <p>Hair</p>
+                                <p>Bath & Body</p>
+                                <p>Appliances </p>
+                                <p>Mom and Body</p>
+                                <p>Helath &Welliness</p>
+                                <p>Fragrance</p>
+                                <p>Natural</p>
+                                <p>Luxe</p>
+                            </div>
+                        </div>
+                        <div class="shipping">
+                            <div style="display: flex; gap: 5%; height: 30%;">
+                                <img src="./ship1.svg"/>
+                                <div >
+                                    <h2>FREE <br/>SHIPPING</h2>
+                                    <p>On orders<br/> Above rs .299</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 5%; height: 30%;"> 
+                                <img src="./ship2.svg"/>
+                                <div>
+                                    <h2>EASY <br/>Returns</h2>
+                                    <p>15-Day Return <br/>Policy</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 5%; height: 30%;">
+                                <img src="./ship3.svg"/>
+                                <div>
+                                    <h2>100% <br/>AUTHENTIC</h2>
+                                    <P>Products <br/>Sourced Directly</P>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 5%; height: 30%;">
+                                <img src="./ship4.svg"/>
+                                <div>
+                                    <h2>1900+BRANDS</h2>
+                                    <P>1.2 Lakh+ Products</P>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>show us some love
+                                    <br/> ❤ on social media</h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="background-color: #f6238d;">
+                                <div class="cndti" style="gap: 3%;">
+                                    <P>Terms & Conditions</P>
+                                    <p>Shipping Policy</p>
+                                    <p>Cancellation Policy</p>
+                                    <p>Privacy Policy</p>
+                                </div>
+                                <p  style="padding-left: 30%;">© 2024 NYKAA E-RETAIL LIMITED All Rights Reserved.</p>
+                            </div>
+                            <div class="last">
+                                <p >  <b>POPULAR LINKS </b><br/><br/>
+                                    lipstick,highlighter,hair serum,concealer,face mask,biotique,lip 
+                                    <br/>gloss,perfume for women,facial kit,bb cream,victoria secret,love beauty and <br/>
+                                    planet shampoo,eyeliner,hair mask,face wash for oily<br/>
+                                    skin,ordinary,toner,eyeshadow palette,cleanser,chemist at <br/>
+                                    play,mascara,loreal professional,hair extensions,olay cream,fogg,lip<br/>
+                                    tint,under eye cream,wax strips,shower gel,sunscreen for face,insight <br/>
+                                    cosmetics,face foundation,hair removal machine,mac foundation,choker,oud <br/>perfume,makeup pouch,olaplex,body mist,wella shampoo,huda beauty<br/>
+                                    foundation,night cream,facewash,nyx,schwarzkopf shampoo,blue<br/>
+                                    heaven,peel off mask,best lip balm,face scrub,Cetaphil Face Wash,Mederma<br/>
+                                    Cream,Multivitamins Tablet,Himalaya Face Wash,Garnier Face Wash,Hair Color<br/>
+                                    For Women,Cetaphil Moisturizers,Ponds Face Wash,Streax Hair Serum,Nivea<br/>
+                                    Body Lotions,Vaseline Body Lotions,Sugar Lipstick,Biotin Tablet,Aqualogica<br/>
+                                    Sunscreen,Salicylic Acid Face Wash,Fogg Perfume,Clean And Clear Face<br/>
+                                    Wash,Neutrogena Sunscreen,Pears Soaps,Hair Color For Men,Dry <br/>
+                                    Cleansers,Face Serum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </footer>
+                
+
+
+                
+              
+                   
+                    
+            
+        
+    </div>
+    
+</body>
+</html>
